@@ -1,0 +1,47 @@
+{
+  "mae": 0.8151,
+  "rmse": 1.546,
+  "r2": 0.8397,
+  "interval_coverage_pct": 93.6,
+  "train_rows": 24780,
+  "test_rows": 6300,
+  "train_period": "2016-02-01 to 2023-12-25",
+  "test_period": "2024-01-01 to 2025-12-29",
+  "city_metrics": [
+    {
+      "city": "Chattogram",
+      "mae": 0.793,
+      "rmse": 1.493,
+      "r2": 0.854,
+      "records": 1050
+    },
+    {
+      "city": "Dhaka North",
+      "mae": 0.804,
+      "rmse": 1.509,
+      "r2": 0.844,
+      "records": 2100
+    },
+    {
+      "city": "Dhaka South",
+      "mae": 0.809,
+      "rmse": 1.548,
+      "r2": 0.825,
+      "records": 2100
+    },
+    {
+      "city": "Gazipur",
+      "mae": 0.961,
+      "rmse": 1.821,
+      "r2": 0.844,
+      "records": 525
+    },
+    {
+      "city": "Narayanganj",
+      "mae": 0.791,
+      "rmse": 1.49,
+      "r2": 0.837,
+      "records": 525
+    }
+  ]
+}
