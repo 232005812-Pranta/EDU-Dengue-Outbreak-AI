@@ -1,0 +1,46 @@
+[
+  {
+    "horizon_weeks": 1,
+    "mae": 1.0499,
+    "rmse": 2.0473,
+    "r2": 0.7206,
+    "interval_coverage_pct": 92.26,
+    "naive_persistence_mae": 1.4229,
+    "train_rows": 24720,
+    "test_rows": 6240,
+    "mae_improvement_vs_naive_pct": 26.2
+  },
+  {
+    "horizon_weeks": 2,
+    "mae": 1.0366,
+    "rmse": 1.9965,
+    "r2": 0.736,
+    "interval_coverage_pct": 94.6,
+    "naive_persistence_mae": 1.6909,
+    "train_rows": 24660,
+    "test_rows": 6180,
+    "mae_improvement_vs_naive_pct": 38.7
+  },
+  {
+    "horizon_weeks": 3,
+    "mae": 1.1,
+    "rmse": 2.1408,
+    "r2": 0.6984,
+    "interval_coverage_pct": 91.08,
+    "naive_persistence_mae": 1.9239,
+    "train_rows": 24600,
+    "test_rows": 6120,
+    "mae_improvement_vs_naive_pct": 42.8
+  },
+  {
+    "horizon_weeks": 4,
+    "mae": 1.3305,
+    "rmse": 2.5305,
+    "r2": 0.5812,
+    "interval_coverage_pct": 94.11,
+    "naive_persistence_mae": 2.1365,
+    "train_rows": 24540,
+    "test_rows": 6060,
+    "mae_improvement_vs_naive_pct": 37.7
+  }
+]
