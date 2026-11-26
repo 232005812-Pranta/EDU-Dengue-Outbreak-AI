@@ -339,7 +339,8 @@ with tab2:
     st.subheader(f"Interactive Ward-Level Outbreak Risk Heatmap — {selected_city}")
     st.caption(
         f"Predicted weekly Dengue cases per ward, each issued {forecast_horizon} week(s) in advance, "
-        "over an 8-week window around the chosen reference date."
+        "over an 8-week window around the chosen reference date. "
+        "Colors use a fixed scale matched to the risk tiers (Medium ≥ 3, High ≥ 7, Critical ≥ 12)."
     )
     city_all = df[df["city"] == selected_city].copy()
     unique_city_dates = sorted(city_all["date"].unique())
@@ -352,14 +353,32 @@ with tab2:
     heat_pred["week_str"] = heat_pred["target_date"].dt.strftime("%Y-%m-%d")
 
     pivot_heat = heat_pred.pivot(index="ward_id", columns="week_str", values="predicted_cases")
+    # Fixed color scale aligned with risk tiers (0-3 Low, 3-7 Medium, 7-12 High, 12+ Critical),
+    # so colors mean the same thing every week: a dry-season 0.1 stays pale, never dark red.
+    HEAT_MAX = 15.0
+    tier_colorscale = [
+        [0.0, "#f0fdf4"],
+        [3.0 / HEAT_MAX, "#fde68a"],
+        [7.0 / HEAT_MAX, "#fb923c"],
+        [12.0 / HEAT_MAX, "#dc2626"],
+        [1.0, "#7f1d1d"],
+    ]
     fig_heat = px.imshow(
         pivot_heat,
         labels=dict(x="Target Week", y="Ward ID", color="Predicted Cases"),
-        color_continuous_scale="YlOrRd",
+        color_continuous_scale=tier_colorscale,
+        range_color=[0.0, HEAT_MAX],
         aspect="auto",
         text_auto=".1f",
     )
-    fig_heat.update_layout(height=520, margin=dict(l=10, r=10, t=20, b=10))
+    fig_heat.update_layout(
+        height=520,
+        margin=dict(l=10, r=10, t=20, b=10),
+        coloraxis_colorbar=dict(
+            tickvals=[0, 3, 7, 12, 15],
+            ticktext=["0", "3 Medium", "7 High", "12 Critical", "15+"],
+        ),
+    )
     st.plotly_chart(fig_heat, use_container_width=True)
 
 with tab3:
