@@ -86,3 +86,38 @@ Public health offices in Dhaka, Chattogram, Gazipur, and Narayanganj require rel
 - **Zero Runtime External API Calls:** All inference runs 100% locally against serialized `.joblib` artifacts—eliminating network latency, API rate limits, and per-query billing.
 - **Zero LLM Token Overhead:** Risk tiers (`Low`, `Medium`, `High`, `Critical`) and targeted municipal interventions (larvicide, drain clearance, thermal fogging, hospital surge readiness) are generated deterministically from calibrated model outputs rather than expensive generative LLM calls.
 - **Streamlit Memory Caching:** `@st.cache_resource` keeps the serialized model bundle resident in memory across user interactions, while `@st.cache_data` caches the pre-computed ward lag dataframe—preventing redundant disk reads or feature recomputation when users toggle wards or adjust What-If weather sliders.
+
+---
+
+## 5. Final Round Upgrade: Leakage-Free Direct Multi-Horizon Early Warning
+
+**Problem with the preliminary model.** The preliminary model predicted week *t* cases using week *t*'s own weather (`rainfall_mm`, `avg_temp_c`, `relative_humidity_pct`). That is a *nowcast*: to "forecast 3 weeks ahead" it needed weather that has not happened yet.
+
+**Fix — one model per horizon (`h = 1, 2, 3, 4` weeks).** At forecast origin week *t*, each model sees **only data observed up to and including week *t*** and predicts cases in week *t + h*:
+
+```text
+origin week t  ──(inputs: weather t, t-1..t-4 | cases t, t-1..t-3 | ward vulnerability)──►  model_h  ──►  cases(t+h)
+```
+
+Because of the 2–4 week Aedes breeding lag, rainfall already observed at weeks *t-2..t* *is* the breeding-window rainfall for target weeks *t+1..t+2* — so the biology lets us forecast without future weather.
+
+**New features (`pipeline.py`)**
+- `cases_lag_0w … cases_lag_3w`, `cases_4w_mean`, `cases_4w_max`, `cases_trend_2w` — ward-level autoregressive surveillance signals.
+- `rainfall_0_2w_sum`, `recent_breeding_potential` — recent rain × water-logging × poor sanitation.
+
+**Leakage-safe split (`train_model.py`).** Train on (origin, target) pairs whose *target* week is before 2024-01-01; test on forecasts *issued* from 2024-01-01 onward.
+
+**Results on unseen 2024–2025 (60 wards):**
+
+| Horizon | MAE | Naive "same as this week" MAE | Improvement | R² | 80% CI coverage |
+|---|---|---|---|---|---|
+| +1 week | 1.051 | 1.423 | +26.2% | 0.721 | 92.3% |
+| +2 weeks | 1.037 | 1.691 | +38.7% | 0.736 | 94.7% |
+| +3 weeks | 1.100 | 1.924 | +42.8% | 0.698 | 91.1% |
+| +4 weeks | 1.325 | 2.137 | +38.0% | 0.590 | 94.1% |
+
+The preliminary nowcast (MAE 0.815) is kept in the bundle for reference; the new numbers are slightly higher because they are an *honest* forecast that never sees future weather.
+
+**Ablation (honest finding).** Adding past case counts changes MAE by only −1.5% to +1.4% across horizons on this dataset — lagged weather × ward vulnerability is the dominant signal. Case lags are kept because they cost nothing and real DGHS surveillance data typically has stronger autocorrelation.
+
+**Automated proof of no leakage (`test_pipeline.py`).** Forecasts issued on 2024-07-01 are recomputed from a dataset truncated at that date; all 60 wards × 4 horizons give identical predictions.

@@ -1,6 +1,17 @@
 import time
 import joblib
-from pipeline import FEATURE_COLS, classify_risk_tier, compute_ward_weather_lags, load_raw_data
+import numpy as np
+import pandas as pd
+from pipeline import (
+    FEATURE_COLS,
+    FORECAST_FEATURE_COLS,
+    FORECAST_HORIZONS,
+    build_forecast_features,
+    build_horizon_dataset,
+    classify_risk_tier,
+    compute_ward_weather_lags,
+    load_raw_data,
+)
 
 
 def run_verification():
@@ -23,6 +34,31 @@ def run_verification():
     for val in [1.2, 4.5, 9.0, 15.3]:
         tier, _, _ = classify_risk_tier(val)
         print(f"   Predicted cases: {val:>4.1f} -> Risk Tier: {tier}")
+
+    print("4. Verifying multi-horizon targets are true future weeks...")
+    feat_df = build_forecast_features(raw_df)
+    assert not feat_df[FORECAST_FEATURE_COLS].isnull().any().any(), "NaN in forecast features!"
+    for h in FORECAST_HORIZONS:
+        hd = build_horizon_dataset(feat_df, h)
+        gap = (hd["target_date"] - hd["date"]).dt.days
+        assert (gap == 7 * h).all(), f"h={h}: target is not exactly {h} week(s) ahead"
+    print("   Targets are exactly 1, 2, 3, 4 weeks after the origin week for every ward.")
+
+    print("5. Leakage test: deleting all future data must not change any forecast...")
+    origin = pd.Timestamp("2024-07-01")
+    truncated_feat = build_forecast_features(raw_df[raw_df["date"] <= origin])
+    full_row = feat_df[feat_df["date"] == origin].sort_values("ward_id")
+    trunc_row = truncated_feat[truncated_feat["date"] == origin].sort_values("ward_id")
+    assert np.allclose(full_row[FORECAST_FEATURE_COLS].values, trunc_row[FORECAST_FEATURE_COLS].values)
+    for h in FORECAST_HORIZONS:
+        m = bundle["horizon_models"][h]["point_model"]
+        assert np.allclose(m.predict(full_row[FORECAST_FEATURE_COLS]), m.predict(trunc_row[FORECAST_FEATURE_COLS]))
+    print(f"   Forecasts issued on {origin.date()} are identical with or without future data (all 60 wards, h=1..4).")
+
+    print("6. Early-warning accuracy vs naive persistence baseline (2024-2025 holdout):")
+    for m in bundle["forecast_metrics"]:
+        assert m["mae"] < m["naive_persistence_mae"], f"h={m['horizon_weeks']} model does not beat naive baseline"
+        print(f"   +{m['horizon_weeks']}W MAE {m['mae']:.3f} vs naive {m['naive_persistence_mae']:.3f}")
 
     print("\nAll pipeline and model verification checks passed successfully!")
 
