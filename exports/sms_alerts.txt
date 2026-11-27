@@ -1,0 +1,30 @@
+[DENGUE CRITICAL] DSCC_Ward_04 +3w (04 Aug 2025): 12 cases. Saline 30/30, Kits 14/14, Crews 3. Supply OK.
+[ডেঙ্গু জরুরি ঝুঁকি] DSCC_Ward_04: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১২ জন। স্যালাইন ৩০/৩০, কিট ১৪/১৪, স্প্রে টিম ৩টি।
+
+[DENGUE CRITICAL] CCC_Ward_03 +3w (04 Aug 2025): 13 cases. Saline 32/32, Kits 15/15, Crews 3. Supply OK.
+[ডেঙ্গু জরুরি ঝুঁকি] CCC_Ward_03: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১৩ জন। স্যালাইন ৩২/৩২, কিট ১৫/১৫, স্প্রে টিম ৩টি।
+
+[DENGUE HIGH] DNCC_Ward_12 +3w (04 Aug 2025): 11 cases. Saline 26/26, Kits 13/13, Crews 3. Supply OK.
+[ডেঙ্গু উচ্চ ঝুঁকি] DNCC_Ward_12: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১১ জন। স্যালাইন ২৬/২৬, কিট ১৩/১৩, স্প্রে টিম ৩টি।
+
+[DENGUE HIGH] CCC_Ward_01 +3w (04 Aug 2025): 12 cases. Saline 28/28, Kits 14/14, Crews 2. Supply OK.
+[ডেঙ্গু উচ্চ ঝুঁকি] CCC_Ward_01: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১২ জন। স্যালাইন ২৮/২৮, কিট ১৪/১৪, স্প্রে টিম ২টি।
+
+[DENGUE HIGH] GCC_Ward_01 +3w (04 Aug 2025): 9 cases. Saline 16/22, Kits 8/11, Crews 3. Supply DEFICIT.
+[ডেঙ্গু উচ্চ ঝুঁকি] GCC_Ward_01: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ৯ জন। স্যালাইন ১৬/২২, কিট ৮/১১, স্প্রে টিম ৩টি। সরবরাহ ঘাটতি!
+
+[DENGUE HIGH] DNCC_Ward_18 +3w (04 Aug 2025): 11 cases. Saline 25/26, Kits 13/13, Crews 2. Supply DEFICIT.
+[ডেঙ্গু উচ্চ ঝুঁকি] DNCC_Ward_18: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১১ জন। স্যালাইন ২৫/২৬, কিট ১৩/১৩, স্প্রে টিম ২টি। সরবরাহ ঘাটতি!
+
+[DENGUE HIGH] DNCC_Ward_05 +3w (04 Aug 2025): 9 cases. Saline 22/23, Kits 10/11, Crews 2. Supply DEFICIT.
+[ডেঙ্গু উচ্চ ঝুঁকি] DNCC_Ward_05: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ৯ জন। স্যালাইন ২২/২৩, কিট ১০/১১, স্প্রে টিম ২টি। সরবরাহ ঘাটতি!
+
+[DENGUE HIGH] GCC_Ward_03 +3w (04 Aug 2025): 12 cases. Saline 18/28, Kits 9/13, Crews 3. Supply DEFICIT.
+[ডেঙ্গু উচ্চ ঝুঁকি] GCC_Ward_03: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১২ জন। স্যালাইন ১৮/২৮, কিট ৯/১৩, স্প্রে টিম ৩টি। সরবরাহ ঘাটতি!
+
+[DENGUE HIGH] DNCC_Ward_19 +3w (04 Aug 2025): 12 cases. Saline 24/28, Kits 12/14, Crews 3. Supply DEFICIT.
+[ডেঙ্গু উচ্চ ঝুঁকি] DNCC_Ward_19: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১২ জন। স্যালাইন ২৪/২৮, কিট ১২/১৪, স্প্রে টিম ৩টি। সরবরাহ ঘাটতি!
+
+[DENGUE HIGH] DSCC_Ward_10 +3w (04 Aug 2025): 10 cases. Saline 22/24, Kits 11/12, Crews 2. Supply DEFICIT.
+[ডেঙ্গু উচ্চ ঝুঁকি] DSCC_Ward_10: ০৪/০৮/২০২৫ সপ্তাহে সম্ভাব্য রোগী ১০ জন। স্যালাইন ২২/২৪, কিট ১১/১২, স্প্রে টিম ২টি। সরবরাহ ঘাটতি!
+

@@ -1,0 +1,13 @@
+{
+  "origin": "2025-07-14",
+  "horizon": 3,
+  "stock": 60,
+  "crews": 40,
+  "out": "exports",
+  "supply_ratios": {
+    "saline_bags_needed": 2.384148927876274,
+    "diagnostic_kits_needed": 1.1581869764749877,
+    "hospital_beds_required": 0.29552346885245034
+  },
+  "cases_prevented_2_4w": 218.3
+}

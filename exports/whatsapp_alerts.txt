@@ -1,0 +1,163 @@
+*🦟 DENGUE DISPATCH — DSCC_Ward_04 (Dhaka South)*
+Risk tier: *CRITICAL* | ঝুঁকি: *জরুরি*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *12.5* (80% CI 0.0–17.4)
+
+*Supplies (allocated / required)*
+• Saline bags: 30 / 30
+• Diagnostic kits: 14 / 14
+• Hospital beds: need 4, local capacity 5
+• Spraying crews assigned: 3 (SOP need 3)
+
+Action: Emergency ward surge readiness, intensive vector control & hospital bed allocation.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — CCC_Ward_03 (Chattogram)*
+Risk tier: *CRITICAL* | ঝুঁকি: *জরুরি*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *13.3* (80% CI 0.0–17.5)
+
+*Supplies (allocated / required)*
+• Saline bags: 32 / 32
+• Diagnostic kits: 15 / 15
+• Hospital beds: need 4, local capacity 4
+• Spraying crews assigned: 3 (SOP need 3)
+
+Action: Emergency ward surge readiness, intensive vector control & hospital bed allocation.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — DNCC_Ward_12 (Dhaka North)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *11.1* (80% CI 0.0–16.8)
+
+*Supplies (allocated / required)*
+• Saline bags: 26 / 26
+• Diagnostic kits: 13 / 13
+• Hospital beds: need 3, local capacity 4
+• Spraying crews assigned: 3 (SOP need 2)
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — CCC_Ward_01 (Chattogram)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *11.7* (80% CI 0.0–16.9)
+
+*Supplies (allocated / required)*
+• Saline bags: 28 / 28
+• Diagnostic kits: 14 / 14
+• Hospital beds: need 3, local capacity 4
+• Spraying crews assigned: 2 (SOP need 2)
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — GCC_Ward_01 (Gazipur)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *9.4* (80% CI 0.0–13.2)
+
+*Supplies (allocated / required)*
+• Saline bags: 16 / 22  ⚠️
+• Diagnostic kits: 8 / 11  ⚠️
+• Hospital beds: need 3, local capacity 4
+• Spraying crews assigned: 3 (SOP need 2)
+⚠️ *SUPPLY DEFICIT: demand not fully met — request emergency restock*
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — DNCC_Ward_18 (Dhaka North)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *10.9* (80% CI 0.0–16.1)
+
+*Supplies (allocated / required)*
+• Saline bags: 25 / 26  ⚠️
+• Diagnostic kits: 13 / 13
+• Hospital beds: need 3, local capacity 4
+• Spraying crews assigned: 2 (SOP need 2)
+⚠️ *SUPPLY DEFICIT: demand not fully met — request emergency restock*
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — DNCC_Ward_05 (Dhaka North)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *9.5* (80% CI 0.0–14.1)
+
+*Supplies (allocated / required)*
+• Saline bags: 22 / 23  ⚠️
+• Diagnostic kits: 10 / 11  ⚠️
+• Hospital beds: need 3, local capacity 4
+• Spraying crews assigned: 2 (SOP need 2)
+⚠️ *SUPPLY DEFICIT: demand not fully met — request emergency restock*
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — GCC_Ward_03 (Gazipur)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *11.6* (80% CI 0.0–16.3)
+
+*Supplies (allocated / required)*
+• Saline bags: 18 / 28  ⚠️
+• Diagnostic kits: 9 / 13  ⚠️
+• Hospital beds: need 3, local capacity 3
+• Spraying crews assigned: 3 (SOP need 2)
+⚠️ *SUPPLY DEFICIT: demand not fully met — request emergency restock*
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — DNCC_Ward_19 (Dhaka North)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *11.7* (80% CI 0.0–17.1)
+
+*Supplies (allocated / required)*
+• Saline bags: 24 / 28  ⚠️
+• Diagnostic kits: 12 / 14  ⚠️
+• Hospital beds: need 3, local capacity 3
+• Spraying crews assigned: 3 (SOP need 2)
+⚠️ *SUPPLY DEFICIT: demand not fully met — request emergency restock*
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।
+
+---
+
+*🦟 DENGUE DISPATCH — DSCC_Ward_10 (Dhaka South)*
+Risk tier: *HIGH* | ঝুঁকি: *উচ্চ*
+Target week (+3w): 04 Aug 2025
+Predicted cases: *10.2* (80% CI 0.0–14.9)
+
+*Supplies (allocated / required)*
+• Saline bags: 22 / 24  ⚠️
+• Diagnostic kits: 11 / 12  ⚠️
+• Hospital beds: need 3, local capacity 4
+• Spraying crews assigned: 2 (SOP need 2)
+⚠️ *SUPPLY DEFICIT: demand not fully met — request emergency restock*
+
+Action: Urgent thermal fogging, hotspot containment & local clinic alert.
+করণীয়: অবিলম্বে উপরের নির্দেশনা অনুযায়ী ব্যবস্থা নিন।

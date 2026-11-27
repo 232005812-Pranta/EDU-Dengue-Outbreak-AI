@@ -36,6 +36,7 @@ FEATURE_COLS = [
 def resolve_dataset_path(default_path: str = "bangladesh_dengue_large_dataset.csv") -> str:
     """Finds the Dengue dataset CSV automatically in the project directory."""
     candidates = [
+        "bangladesh_dengue_large_dataset_onsite.csv",  # Phase 2 onsite data (adds supply columns)
         default_path,
         "hackathon_preli_dataset - bangladesh_dengue_large_dataset.csv",
     ]
@@ -51,7 +52,7 @@ def resolve_dataset_path(default_path: str = "bangladesh_dengue_large_dataset.cs
 
 
 def load_raw_data(csv_path=None) -> pd.DataFrame:
-    path = resolve_dataset_path(csv_path) if csv_path else resolve_dataset_path()
+    path = csv_path if (csv_path and os.path.exists(csv_path)) else resolve_dataset_path()
     df = pd.read_csv(path)
     df.columns = [c.strip().lower() for c in df.columns]
     df["date"] = pd.to_datetime(df["date"])
