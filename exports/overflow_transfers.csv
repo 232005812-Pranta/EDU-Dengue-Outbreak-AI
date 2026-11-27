@@ -1,0 +1,10 @@
+city,from_ward,to_ward,patients
+Dhaka North,DNCC_Ward_15,DNCC_Ward_04,2
+Dhaka North,DNCC_Ward_03,DNCC_Ward_13,1
+Dhaka North,DNCC_Ward_03,DNCC_Ward_20,1
+Dhaka North,DNCC_Ward_01,DNCC_Ward_14,1
+Dhaka South,DSCC_Ward_03,DSCC_Ward_08,1
+Dhaka South,DSCC_Ward_05,DSCC_Ward_14,1
+Dhaka South,DSCC_Ward_20,DSCC_Ward_07,1
+Narayanganj,NCC_Ward_02,NCC_Ward_04,1
+Narayanganj,NCC_Ward_03,NCC_Ward_04,1
